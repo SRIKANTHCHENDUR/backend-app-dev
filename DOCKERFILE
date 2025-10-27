@@ -11,7 +11,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # ✅ Use Render's dynamic port
-ENV PORT=8080
+ENV PORT=10000
 EXPOSE ${PORT}
 
 # ✅ Run the app and pass the dynamic port to Spring Boot
